@@ -47,7 +47,7 @@ function pkg_all.async(format, warg, callback)
     local pkgmgr = PKGMGR[warg]
 	
     local size, lines = -pkgmgr.sub, ""
-	spawn("pacman -Syy")
+	spawn.with_shell("pacman -Syy")
     spawn.with_line_callback_with_shell(pkgmgr.cmd, {
         stdout = function (str)
             size = size + 1
