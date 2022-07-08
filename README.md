@@ -1,1 +1,1 @@
-u need hack and awesome fonts.
+u need hack font, awesome font, synth-shell-promt
