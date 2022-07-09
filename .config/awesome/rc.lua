@@ -43,7 +43,7 @@ vicious.register(pacmanwidget, vicious.widgets.pkg, " $1", 1800, "Arch")
 
 -- Uptime Widget
 uptimewidget = wibox.widget.textbox()
-vicious.register(uptimewidget, vicious.widgets.uptime, " $2h $3min", 60)
+vicious.register(uptimewidget, vicious.widgets.uptime, "  $2h $3min", 60)
 
 -- Volume
 
