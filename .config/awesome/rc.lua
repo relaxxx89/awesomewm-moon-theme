@@ -22,8 +22,13 @@ local logout_menu_widget = require("awesome-wm-widgets.logout-menu-widget.logout
 local vicious = require("vicious")
 
 -- CPU widget
-cpuwidget = wibox.widget.textbox()
-vicious.register(cpuwidget, vicious.widgets.cpu, " $1%", 1)
+cpuwidget = wibox.widget{
+	align  = 'center',
+	valign = 'left',
+    forced_width = 27,
+    widget = wibox.widget.textbox
+}
+vicious.register(cpuwidget, vicious.widgets.cpu, "$1%", 1)
 
 -- RAM widget
 
@@ -258,6 +263,10 @@ awful.screen.connect_for_each_screen(function(s)
             mykeyboardlayout, separator,
             volumewidget, separator,
 			memwidget, separator,
+			wibox.widget{
+						    markup = "",
+						    widget = wibox.widget.textbox
+						},
 			cpuwidget, separator,
 			pacmanwidget, separator,
             date, separator,
