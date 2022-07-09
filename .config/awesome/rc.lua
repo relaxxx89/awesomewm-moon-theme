@@ -312,8 +312,6 @@ globalkeys = gears.table.join(
         end,
         {description = "focus previous by index", group = "client"}
     ),
-    awful.key({ modkey,           }, "w", function () mymainmenu:show() end,
-              {description = "show main menu", group = "awesome"}),
 
     -- Volume
     awful.key({modkey}, ".", function () awful.util.spawn("amixer -D default sset Master 2%+", false) end),
