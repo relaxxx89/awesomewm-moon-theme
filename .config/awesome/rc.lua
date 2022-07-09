@@ -314,9 +314,12 @@ globalkeys = gears.table.join(
     ),
 
     -- Volume
-    awful.key({modkey}, ".", function () awful.util.spawn("amixer -D default sset Master 2%+", false) end),
-    awful.key({modkey}, ",", function () awful.util.spawn("amixer -D default sset Master 2%-", false) end),
-    awful.key({modkey}, "/", function () awful.util.spawn("amixer -D default sset Master toggle", false) end),
+    awful.key({modkey}, ".", function () awful.util.spawn("amixer -D default sset Master 2%+", false) end,
+    			{description = "volume up by 2%", group = "volume"}),
+    awful.key({modkey}, ",", function () awful.util.spawn("amixer -D default sset Master 2%-", false) end,
+    			{description = "volume down by 2%", group = "volume"}),
+    awful.key({modkey}, "/", function () awful.util.spawn("amixer -D default sset Master toggle", false) end,
+    			{description = "mute", group = "volume"}),
 
     -- Layout manipulation
     awful.key({ modkey, "Shift"   }, "j", function () awful.client.swap.byidx(  1)    end,
