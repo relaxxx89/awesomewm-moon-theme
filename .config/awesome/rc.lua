@@ -35,11 +35,11 @@ vicious.register(cpuwidget, vicious.widgets.cpu, "$1%", 1)
 memwidget = wibox.widget{
 	align  = 'center',
 	valign = 'left',
-    forced_width = 101,
+    forced_width = 76,
     widget = wibox.widget.textbox
 }
 vicious.cache(vicious.widgets.mem)
-vicious.register(memwidget, vicious.widgets.mem, "RAM $1% ($2GB/$3GB)", 1)
+vicious.register(memwidget, vicious.widgets.mem, "$2GB/$3GB", 1)
 
 -- Pacman updates
 
@@ -267,6 +267,10 @@ awful.screen.connect_for_each_screen(function(s)
 			},
             mykeyboardlayout, separator,
             volumewidget, separator,
+			wibox.widget{
+						    markup = "",
+						    widget = wibox.widget.textbox
+						},
 			memwidget, separator,
 			wibox.widget{
 						    markup = "",
