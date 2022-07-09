@@ -32,7 +32,12 @@ vicious.register(cpuwidget, vicious.widgets.cpu, "$1%", 1)
 
 -- RAM widget
 
-memwidget = wibox.widget.textbox()
+memwidget = wibox.widget{
+	align  = 'center',
+	valign = 'left',
+    forced_width = 101,
+    widget = wibox.widget.textbox
+}
 vicious.cache(vicious.widgets.mem)
 vicious.register(memwidget, vicious.widgets.mem, "RAM $1% ($2GB/$3GB)", 1)
 
