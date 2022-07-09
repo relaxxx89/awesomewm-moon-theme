@@ -44,7 +44,7 @@ vicious.register(memwidget, vicious.widgets.mem, "RAM $1% ($2GB/$3GB)", 1)
 -- Pacman updates
 
 pacmanwidget = wibox.widget.textbox()
-vicious.register(pacmanwidget, vicious.widgets.pkg, " $1", 1800, "Arch")
+vicious.register(pacmanwidget, vicious.widgets.pkg, " $1", 1800, "Arch")
 
 -- Uptime Widget
 uptimewidget = wibox.widget.textbox()
