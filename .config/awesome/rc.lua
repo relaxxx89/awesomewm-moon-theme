@@ -41,10 +41,10 @@ memwidget = wibox.widget{
 vicious.cache(vicious.widgets.mem)
 vicious.register(memwidget, vicious.widgets.mem, "$2GB/$3GB", 1)
 
--- Pacman updates
+-- Paru updates
 
-pacmanwidget = wibox.widget.textbox()
-vicious.register(pacmanwidget, vicious.widgets.pkg, " $1", 1800, "Arch")
+paruwidget = wibox.widget.textbox()
+vicious.register(paruwidget, vicious.widgets.pkg, " $1", 1800, "Arch")
 
 -- Uptime Widget
 uptimewidget = wibox.widget.textbox()
@@ -277,7 +277,7 @@ awful.screen.connect_for_each_screen(function(s)
 						    widget = wibox.widget.textbox
 						},
 			cpuwidget, separator,
-			pacmanwidget, separator,
+			paruwidget, separator,
             date, separator,
             actuallyclock, separator,
             logout_menu_widget{
