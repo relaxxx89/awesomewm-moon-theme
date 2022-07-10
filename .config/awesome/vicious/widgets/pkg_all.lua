@@ -31,7 +31,7 @@ local helpers = require("vicious.helpers")
 local pkg_all = {}
 
 local PKGMGR = {
-    ["Arch"] = { cmd = "pacman -Qu", sub = 0 },
+    ["Arch"] = { cmd = "paru -Qu", sub = 0 },
     ["Arch C"] = { cmd = "checkupdates", sub = 0 },
     ["Arch S"] = { cmd = "yes | pacman -Sup", sub = 1 },
     ["Debian"] = { cmd = "apt list --upgradable", sub = 1 },
@@ -47,7 +47,6 @@ function pkg_all.async(format, warg, callback)
     local pkgmgr = PKGMGR[warg]
 	
     local size, lines = -pkgmgr.sub, ""
-	spawn.with_shell("pacman -Syy")
     spawn.with_line_callback_with_shell(pkgmgr.cmd, {
         stdout = function (str)
             size = size + 1
