@@ -5,7 +5,10 @@ for the shell u can use [synth-shell-promt](https://github.com/andresgongora/syn
 for zsh u need to install [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) and [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) plugins
 
 
-<!--![alt text]
+![alt text]https://github.com/relaxxx89/awesomewm-moon-theme/blob/main/main.png?raw=true
 
 
-#![alt text]-->
+![alt text]https://github.com/relaxxx89/awesomewm-moon-theme/blob/main/cli.png?raw=true
+
+
+![alt text]https://github.com/relaxxx89/awesomewm-moon-theme/blob/main/rofi.png?raw=true
