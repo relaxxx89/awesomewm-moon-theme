@@ -5,7 +5,7 @@ for the shell u can use [synth-shell-promt](https://github.com/andresgongora/syn
 for zsh u need to install [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) and [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) plugins
 
 
-#![alt text]
+<!--![alt text]
 
 
-#![alt text]
+#![alt text]-->
