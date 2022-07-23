@@ -15,6 +15,8 @@ also you might want a pacman hook to restart awesome config
 so chmod +x awesome-reload.sh in your awesome config directory
 
 then edit the line with <user> to your actual username in the pacman-widget.hook in /etc/pacman.d/hooks
+  
+also edit theme.lua wallpaper section with your username instead of <user>
 
 ![alt text](https://github.com/relaxxx89/awesomewm-moon-theme/blob/main/main.png?raw=true)
 
