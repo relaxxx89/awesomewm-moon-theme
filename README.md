@@ -12,7 +12,7 @@ for paru widget u need to copy and systemctl enable timer and service in /etc/sy
 
 also you might want a pacman hook to restart awesome config
 
-so chmod +x awesome-reload in awesome config directory
+so chmod +x awesome-reload.sh in awesome config directory
 
 then edit the line with <user> to your actual username in the pacman-widget.hook in /etc/pacman.d/hooks
 
