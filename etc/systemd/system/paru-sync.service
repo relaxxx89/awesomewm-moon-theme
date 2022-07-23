@@ -1,0 +1,9 @@
+[Unit]
+Description=Paru Sync Script 
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/paru -Sy
+
+[Install]
+WantedBy=default.target
