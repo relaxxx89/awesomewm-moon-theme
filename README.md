@@ -4,6 +4,7 @@ for the shell u can use [synth-shell-promt](https://github.com/andresgongora/syn
 
 for zsh u need to install [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) and [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) plugins
 
+for paru widget u need to systemctl copy and enable timer and service in /etc/systemd/system directory
 
 ![alt text](https://github.com/relaxxx89/awesomewm-moon-theme/blob/main/main.png?raw=true)
 
