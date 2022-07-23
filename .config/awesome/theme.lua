@@ -61,7 +61,7 @@ theme.taglist_squares_unsel = theme_assets.taglist_squares_unsel(
 -- notification_[bg|fg]
 -- notification_[width|height|margin]
 -- notification_[border_color|border_width|shape|opacity]
-theme.wallpaper = "/home/stepan/.config/awesome/planet_relief_space_297333_1920x1080.jpg"
+theme.wallpaper = "/home/<user>/.config/awesome/planet_relief_space_297333_1920x1080.jpg"
 -- Variables set for theming the menu:
 -- menu_[bg|fg]_[normal|focus]
 -- menu_[border_color|border_width]
