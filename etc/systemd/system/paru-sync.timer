@@ -1,0 +1,11 @@
+[Unit]
+Description=Run paru update script on fixed times
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=1h
+Unit=paru-sync.service
+Persistent=true
+
+[Install]
+WantedBy=default.target
