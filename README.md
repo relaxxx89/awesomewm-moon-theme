@@ -7,6 +7,8 @@ for zsh u need to install [zsh-syntax-highlighting](https://github.com/zsh-users
 for paru widget u need to copy and systemctl enable timer and service in /etc/systemd/system directory
 
 also you might want a pacman hook to restart awesome config
+so chmod +x awesome-reload in awesome config directory
+then edit the line with <user> to your actual username in the pacman-widget.hook in /etc/pacman.d/hooks
 
 ![alt text](https://github.com/relaxxx89/awesomewm-moon-theme/blob/main/main.png?raw=true)
 
